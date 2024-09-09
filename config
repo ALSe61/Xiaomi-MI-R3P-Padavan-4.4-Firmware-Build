@@ -24,13 +24,13 @@ CONFIG_FIRMWARE_ENABLE_USB=y
 CONFIG_FIRMWARE_ENABLE_FAT=y
 
 ### Enable exFAT (FAT/FAT32 too) filesystem support. ~0.12MB
-#CONFIG_FIRMWARE_ENABLE_EXFAT=y
+CONFIG_FIRMWARE_ENABLE_EXFAT=n
 
 ### Enable EXT2 filesystem support. ~0.1MB
-#CONFIG_FIRMWARE_ENABLE_EXT2=y
+#CONFIG_FIRMWARE_ENABLE_EXT2=n
 
 ### Enable EXT3 filesystem support. ~0.2MB
-#CONFIG_FIRMWARE_ENABLE_EXT3=y
+CONFIG_FIRMWARE_ENABLE_EXT3=n
 
 ### Enable EXT4 (EXT3/2 too) filesystem support. ~0.4MB
 CONFIG_FIRMWARE_ENABLE_EXT4=y
@@ -63,7 +63,7 @@ CONFIG_FIRMWARE_INCLUDE_XFRM=n
 #CONFIG_FIRMWARE_INCLUDE_IMQ=n
 
 ### Include IFB module for shapers. ~0.03MB
-CONFIG_FIRMWARE_INCLUDE_IFB=n
+CONFIG_FIRMWARE_INCLUDE_IFB=y
 
 ### Include IPSet utility and kernel modules. ~0.4MB
 CONFIG_FIRMWARE_INCLUDE_IPSET=y
@@ -75,7 +75,7 @@ CONFIG_FIRMWARE_INCLUDE_IPSET=y
 #CONFIG_FIRMWARE_INCLUDE_NFSC=n
 
 ### Include CIFS (SMB) client. ~0.2MB
-#CONFIG_FIRMWARE_INCLUDE_CIFS=y
+#CONFIG_FIRMWARE_INCLUDE_CIFS=n
 
 ############################################################
 ### Userspace configuration
@@ -100,16 +100,16 @@ CONFIG_FIRMWARE_INCLUDE_LANG_RU=y
 #CONFIG_FIRMWARE_INCLUDE_NTFS_3G=n
 
 ### Include LPR printer daemon. ~0.12MB
-#CONFIG_FIRMWARE_INCLUDE_LPRD=y
+#CONFIG_FIRMWARE_INCLUDE_LPRD=n
 
 ### Include USB-over-Ethernet printer daemon. ~0.05MB
-#CONFIG_FIRMWARE_INCLUDE_U2EC=y
+#CONFIG_FIRMWARE_INCLUDE_U2EC=n
 
 ### Include "tcpdump" utility. ~0.6MB
 CONFIG_FIRMWARE_INCLUDE_TCPDUMP=y
 
 ### Include "hdparm" utility (allow set HDD spindown timeout and APM). ~0.1MB
-#CONFIG_FIRMWARE_INCLUDE_HDPARM=y
+#CONFIG_FIRMWARE_INCLUDE_HDPARM=n
 
 ### Include "parted" utility (allow make GPT partitions). ~0.3MB
 CONFIG_FIRMWARE_INCLUDE_PARTED=y
@@ -145,7 +145,7 @@ CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y
 CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=y
 
 ### Include OpenSSH instead of dropbear. openssl ~1.2MB, openssh ~1.0MB
-#CONFIG_FIRMWARE_INCLUDE_OPENSSH=y
+CONFIG_FIRMWARE_INCLUDE_OPENSSH=y
 
 ### Include OpenVPN. IPv6 required. openssl ~1.2MB, openvpn ~0.4MB
 #CONFIG_FIRMWARE_INCLUDE_OPENVPN=y
