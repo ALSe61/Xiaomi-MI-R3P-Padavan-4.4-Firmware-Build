@@ -1,7 +1,7 @@
 #!/bin/bash
 
-user_name="root"                                    # 用户名
-user_password="root"                                # 登录密码
+user_name="admin"                                    # 用户名
+user_password="admin"                                # 登录密码
 lan_ip="192.168.1"                                 # LAN 地址 别写后面的 .1
 wlan_2g_ssid="MiR3P"                             # 2G 无线名称
 wlan_5g_ssid="MiR3P"                               # 5G 无线名称
@@ -34,10 +34,10 @@ echo "修改 5G 访客无线名称"
 #sed -i 's/DEF_WLAN_5G_GSSID	BOARD_PID "_GUEST_5G_%s"/DEF_WLAN_5G_GSSID	"'$wlan_guest_5g_ssid'"/g' $default_file
 
 echo "修改 2.4GHz WIFI 密码"
-sed -i 's/DEF_WLAN_2G_PSK		"123456789"/DEF_WLAN_2G_PSK		"'$wlan_2g_psk'"/g' $default_file
+sed -i 's/DEF_WLAN_2G_PSK		"1234567890"/DEF_WLAN_2G_PSK		"'$wlan_2g_psk'"/g' $default_file
 
 echo "修改 5GHz WIFI 密码"
-sed -i 's/DEF_WLAN_5G_PSK		"123456789"/DEF_WLAN_5G_PSK		"'$wlan_5g_psk'"/g' $default_file
+sed -i 's/DEF_WLAN_5G_PSK		"1234567890"/DEF_WLAN_5G_PSK		"'$wlan_5g_psk'"/g' $default_file
 
 echo "更新版本号时间"
 sed -i "s/FIRMWARE_BUILDS_REV=.*/FIRMWARE_BUILDS_REV=$version_time/g" ./versions.inc
